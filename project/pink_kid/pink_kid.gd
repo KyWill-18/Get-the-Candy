@@ -1,0 +1,50 @@
+class_name PinkKid
+extends CharacterBody2D
+
+const WALK_SPEED = 300.0
+const JUMP_VELOCITY = -425.0
+
+var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
+
+@onready var animated_sprite = $AnimatedSprite2D
+
+func _physics_process(delta: float) -> void:
+	if not is_on_floor():
+		velocity.y += gravity * delta
+
+	if Input.is_action_just_pressed("jump") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	var direction := Input.get_axis("move_left","move_right")
+
+	if direction:
+		velocity.x = direction * WALK_SPEED
+		animated_sprite.flip_h = (direction < 0)
+	else:
+		velocity.x = move_toward(velocity.x, 0, WALK_SPEED)
+
+	if Input.is_action_just_pressed("attack"):
+		attack()
+
+	var animation_to_play := "idle"
+
+	if not is_on_floor():
+		animation_to_play = "jump"
+	elif direction != 0:
+		animation_to_play = "run"
+
+	if animated_sprite.animation == "hit" and animated_sprite.is_playing():
+		animation_to_play = "hit"
+
+	animated_sprite.play(animation_to_play)
+
+	move_and_slide()
+
+
+func attack() -> void:
+	print("Attack!")
+	animated_sprite.play("hit")
+
+
+func _ready() -> void:
+	print(gravity)
