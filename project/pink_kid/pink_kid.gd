@@ -1,6 +1,8 @@
 class_name PinkKid
 extends CharacterBody2D
 
+signal pinata_hit(pinata: Pinata)
+
 const WALK_SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 
@@ -8,7 +10,6 @@ var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 
 @onready var animated_sprite := $AnimatedSprite2D
 @onready var attack_hitbox := $AttackHitbox
-var is_hitting = false
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -22,11 +23,14 @@ func _physics_process(delta: float) -> void:
 	if direction:
 		velocity.x = direction * WALK_SPEED
 		animated_sprite.flip_h = (direction < 0)
+		attack_hitbox.scale.x = signf(direction)
 	else:
 		velocity.x = move_toward(velocity.x, 0, WALK_SPEED)
 
 	if Input.is_action_just_pressed("attack"):
 		attack()
+
+	move_and_slide()
 
 	if animated_sprite.animation == "hit" and animated_sprite.is_playing():
 		return
@@ -39,12 +43,10 @@ func _physics_process(delta: float) -> void:
 		animation_to_play = "run"
 
 	animated_sprite.play(animation_to_play)
-	move_and_slide()
 
 
 func attack() -> void:
 	animated_sprite.play("hit")
-	var overlapping_areas = attack_hitbox.get_overlapping_areas()
-	for area in overlapping_areas:
-		if area.is_in_group("pinatas"):
-			area.get_hit()
+	for area in attack_hitbox.get_overlapping_areas():
+		if area is Pinata:
+			pinata_hit.emit(area)

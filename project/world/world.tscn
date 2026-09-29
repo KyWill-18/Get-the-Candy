@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://bi6hi5v05k452"]
 
 [ext_resource type="PackedScene" uid="uid://d3v5y3sg4cae6" path="res://pinata/pinata.tscn" id="1_4717r"]
+[ext_resource type="Script" uid="uid://c4xkb0ae83o42" path="res://world/world.gd" id="1_h5o24"]
 [ext_resource type="Texture2D" uid="uid://dx5jfe02qsxq2" path="res://world/Terrain (16x16).png" id="1_tcf2h"]
 [ext_resource type="PackedScene" uid="uid://dg51uekee1hkm" path="res://pink_kid/pink_kid.tscn" id="2_4717r"]
 
@@ -300,9 +301,16 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_irlpa")
 
 [node name="World" type="Node2D" unique_id=501303129]
+script = ExtResource("1_h5o24")
 
 [node name="Pinata" parent="." unique_id=1957681435 instance=ExtResource("1_4717r")]
 position = Vector2(545, 519)
+
+[node name="Pinata2" parent="." unique_id=262973583 instance=ExtResource("1_4717r")]
+position = Vector2(780, 304)
+
+[node name="Pinata3" parent="." unique_id=1115389402 instance=ExtResource("1_4717r")]
+position = Vector2(36, 519)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=845443898]
 scale = Vector2(1.5, 1.5)
@@ -310,4 +318,14 @@ tile_map_data = PackedByteArray("AAAAABcAAAAGAAAAAAAAABgAAAAGAAEAAAAAABkAAAAGAAI
 tile_set = SubResource("TileSet_awtvj")
 
 [node name="Pink Kid" parent="." unique_id=1726459749 instance=ExtResource("2_4717r")]
-position = Vector2(44, 504)
+position = Vector2(176, 429)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2064775009]
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1813772230]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=687046434]
+offset_right = 40.0
+offset_bottom = 23.0
