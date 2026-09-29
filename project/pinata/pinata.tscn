@@ -28,7 +28,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("6_hnnn7")
 }],
-"loop": 1,
+"loop": 0,
 "name": &"destroy",
 "speed": 10.0
 }, {
@@ -48,15 +48,16 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_cab5j"]
-radius = 11.401754
+radius = 14.035668
 
-[node name="Pinata" type="Area2D" unique_id=1957681435]
+[node name="Pinata" type="Area2D" unique_id=1957681435 groups=["pinatas"]]
+scale = Vector2(3, 3)
 script = ExtResource("1_gew7t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1401871391]
 sprite_frames = SubResource("SpriteFrames_awtvj")
 animation = &"idle"
-frame_progress = 0.65136296
+autoplay = "idle"
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1916203305]

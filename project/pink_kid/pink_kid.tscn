@@ -249,11 +249,13 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_awtvj"]
 height = 24.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awtvj"]
+size = Vector2(27.16667, 15.333328)
+
 [node name="Pink Kid" type="CharacterBody2D" unique_id=1726459749]
-position = Vector2(67, 509)
+position = Vector2(68, 515)
 scale = Vector2(3, 3)
 script = ExtResource("1_k84i8")
-metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1669005003]
 sprite_frames = SubResource("SpriteFrames_awtvj")
@@ -263,3 +265,9 @@ autoplay = "idle"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1072306500]
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_awtvj")
+
+[node name="AttackHitbox" type="Area2D" parent="." unique_id=260301986]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=814151337]
+position = Vector2(12.333332, 2.3333385)
+shape = SubResource("RectangleShape2D_awtvj")

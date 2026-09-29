@@ -6,7 +6,9 @@ const JUMP_VELOCITY = -400.0
 
 var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 
-@onready var animated_sprite = $AnimatedSprite2D
+@onready var animated_sprite := $AnimatedSprite2D
+@onready var attack_hitbox := $AttackHitbox
+var is_hitting = false
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -26,6 +28,9 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("attack"):
 		attack()
 
+	if animated_sprite.animation == "hit" and animated_sprite.is_playing():
+		return
+
 	var animation_to_play := "idle"
 
 	if not is_on_floor():
@@ -33,13 +38,13 @@ func _physics_process(delta: float) -> void:
 	elif direction != 0:
 		animation_to_play = "run"
 
-	if animated_sprite.animation == "hit" and animated_sprite.is_playing():
-		animation_to_play = "hit"
-
 	animated_sprite.play(animation_to_play)
-
 	move_and_slide()
 
 
 func attack() -> void:
 	animated_sprite.play("hit")
+	var overlapping_areas = attack_hitbox.get_overlapping_areas()
+	for area in overlapping_areas:
+		if area.is_in_group("pinatas"):
+			area.get_hit()
