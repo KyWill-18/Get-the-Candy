@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c4xkb0ae83o42" path="res://world/world.gd" id="1_h5o24"]
 [ext_resource type="Texture2D" uid="uid://dx5jfe02qsxq2" path="res://world/Terrain (16x16).png" id="1_tcf2h"]
 [ext_resource type="PackedScene" uid="uid://dg51uekee1hkm" path="res://pink_kid/pink_kid.tscn" id="2_4717r"]
+[ext_resource type="PackedScene" uid="uid://dicyulji1v8tr" path="res://hud/hud.tscn" id="5_fn3g3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irlpa"]
 texture = ExtResource("1_tcf2h")
@@ -320,12 +321,4 @@ tile_set = SubResource("TileSet_awtvj")
 [node name="Pink Kid" parent="." unique_id=1726459749 instance=ExtResource("2_4717r")]
 position = Vector2(176, 429)
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=2064775009]
-
-[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer" unique_id=1813772230]
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Label" type="Label" parent="CanvasLayer" unique_id=687046434]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="HUD" parent="." unique_id=537886106 instance=ExtResource("5_fn3g3")]
