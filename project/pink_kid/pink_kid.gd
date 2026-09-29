@@ -2,7 +2,7 @@ class_name PinkKid
 extends CharacterBody2D
 
 const WALK_SPEED = 300.0
-const JUMP_VELOCITY = -425.0
+const JUMP_VELOCITY = -400.0
 
 var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 
@@ -42,9 +42,4 @@ func _physics_process(delta: float) -> void:
 
 
 func attack() -> void:
-	print("Attack!")
 	animated_sprite.play("hit")
-
-
-func _ready() -> void:
-	print(gravity)
