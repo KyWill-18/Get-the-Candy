@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://bhmxl0y7wp2kq"]
+
+[ext_resource type="Texture2D" uid="uid://dspraknbeghop" path="res://title/title_background.png" id="1_crako"]
+[ext_resource type="Script" uid="uid://cnplidgcfuod8" path="res://title/title.gd" id="1_nx56k"]
+[ext_resource type="FontFile" uid="uid://mjvl0kulyj0x" path="res://common/thaleah_fat.ttf" id="2_nx56k"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_awtvj"]
+line_spacing = -30.0
+font = ExtResource("2_nx56k")
+font_size = 180
+font_color = Color(1, 0.54901963, 0.25882354, 1)
+outline_size = 60
+outline_color = Color(0.9529412, 0.83137256, 0.3764706, 1)
+shadow_size = 100
+shadow_color = Color(1.102916, 0.7134316, 0.3559595, 0.96862745)
+shadow_offset = Vector2(1, 13)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_crako"]
+bg_color = Color(0.9529412, 0.83137256, 0.3764706, 1)
+border_width_left = 20
+border_width_top = 20
+border_width_right = 20
+border_width_bottom = 20
+border_color = Color(1.0596888, 0.76971793, 0.40272355, 1)
+border_blend = true
+
+[node name="Title" type="Control" unique_id=1048436922]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_nx56k")
+
+[node name="TitleBackground" type="Sprite2D" parent="." unique_id=882043759]
+position = Vector2(577, 321.5)
+scale = Vector2(1.8, 1.6796875)
+texture = ExtResource("1_crako")
+
+[node name="GameTitle" type="Label" parent="." unique_id=409062940]
+layout_mode = 0
+offset_left = 179.0
+offset_top = -25.0
+offset_right = 968.0
+offset_bottom = 368.0
+text = " Get The 
+Candy!"
+label_settings = SubResource("LabelSettings_awtvj")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PressStartButton" type="Button" parent="." unique_id=253939920]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 413.0
+offset_top = 485.0
+offset_right = 759.0
+offset_bottom = 599.0
+offset_transform_enabled = true
+theme_override_colors/font_color = Color(1, 0.54901963, 0.25882354, 1)
+theme_override_colors/font_hover_color = Color(2.1989477, 1.7763737, 0.2181324, 1)
+theme_override_fonts/font = ExtResource("2_nx56k")
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_crako")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_crako")
+theme_override_styles/hover = SubResource("StyleBoxFlat_crako")
+theme_override_styles/focus = SubResource("StyleBoxFlat_crako")
+text = "Press Start!"
