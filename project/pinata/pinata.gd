@@ -5,8 +5,9 @@ signal destroyed
 
 @onready var animated_sprite := $AnimatedSprite2D
 @onready var collision_shape := $CollisionShape2D
+@onready var cpu_particles := $CPUParticles2D
 
-var is_destroyed = false
+var is_destroyed := false
 
 
 func get_hit() -> void:
@@ -16,6 +17,7 @@ func get_hit() -> void:
 	destroyed.emit()
 	animated_sprite.play("destroy")
 	collision_shape.set_deferred("disabled", true)
+	cpu_particles.emitting = true
 
 	await animated_sprite.animation_finished
 

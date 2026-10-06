@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c4ls3j58xdics" path="res://pinata/pinata_idle_1.png" id="7_4vpxd"]
 [ext_resource type="Texture2D" uid="uid://chasb7d00r1c8" path="res://pinata/pinata_idle_2.png" id="8_dhqgx"]
 [ext_resource type="Texture2D" uid="uid://chmavb7825ehs" path="res://pinata/pinata_idle_3.png" id="9_hdeer"]
+[ext_resource type="Texture2D" uid="uid://bfq86jep8snv8" path="res://pinata/candy.png" id="10_xcfta"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_awtvj"]
 animations = [{
@@ -62,3 +63,21 @@ flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1916203305]
 shape = SubResource("CircleShape2D_cab5j")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1722153155]
+emitting = false
+texture = ExtResource("10_xcfta")
+lifetime = 0.9
+one_shot = true
+explosiveness = 1.0
+direction = Vector2(90, 0)
+spread = 90.0
+gravity = Vector2(0, 100)
+initial_velocity_min = 30.0
+initial_velocity_max = 30.0
+angular_velocity_min = 5.0
+angular_velocity_max = 5.0
+scale_amount_min = 2.0
+scale_amount_max = 2.0
+hue_variation_min = 0.5
+hue_variation_max = 0.5
