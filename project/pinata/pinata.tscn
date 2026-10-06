@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://chasb7d00r1c8" path="res://pinata/pinata_idle_2.png" id="8_dhqgx"]
 [ext_resource type="Texture2D" uid="uid://chmavb7825ehs" path="res://pinata/pinata_idle_3.png" id="9_hdeer"]
 [ext_resource type="Texture2D" uid="uid://bfq86jep8snv8" path="res://pinata/candy.png" id="10_xcfta"]
+[ext_resource type="AudioStream" uid="uid://dlkswlgwfah2j" path="res://pinata/pinata_thud.wav" id="11_ldgue"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_awtvj"]
 animations = [{
@@ -81,3 +82,8 @@ scale_amount_min = 2.0
 scale_amount_max = 2.0
 hue_variation_min = 0.5
 hue_variation_max = 0.5
+
+[node name="PinataThud" type="AudioStreamPlayer2D" parent="." unique_id=1167550235]
+stream = ExtResource("11_ldgue")
+volume_db = -2.0
+pitch_scale = 3.15

@@ -20,6 +20,7 @@ func _physics_process(delta: float) -> void:
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		jump_sound.play()
 
 	var direction := Input.get_axis("move_left", "move_right")
 
@@ -42,7 +43,6 @@ func _physics_process(delta: float) -> void:
 
 	if not is_on_floor():
 		animation_to_play = "jump"
-		jump_sound.play()
 	elif direction != 0:
 		animation_to_play = "run"
 
