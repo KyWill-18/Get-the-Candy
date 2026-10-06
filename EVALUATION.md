@@ -1,4 +1,4 @@
-# Evaluation 2, Increment 1: 2D Platforming Basic
+# Evaluation 2, Increment 1: 2D Platforming Basics
 
 For this project, I created a 2D platformer where the player controls the pink character and hits pinatas to win the game
 
@@ -14,17 +14,19 @@ For this project, I created a 2D platformer where the player controls the pink c
 The customer gameplay in this project is hitting and destroying pinatas. The player must interact with the pinatas throughout the game, and the HUD keep track of how many pinatas are left. Destroying all the pinats completes the level and triggers the win screen.
 
 
-## Third-Party Assets
 
-- Piñata sprite from [Piñata pixel art 24x24](https://camacebra.itch.io/pinata-pixel-art-24x24)
-  by Camacebra Games, [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
+# Evaluation 2, Increment 2: Juice and Polish
 
-- Player character and tileset from [Pixel Adventure 1](https://pixelfrog-assets.itch.io/pixel-adventure-1)
-  by Pixel Frog, [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
+For this increment, I finished my 2D platformer by adding a title screen, music, and sound effects. Also a themed background, a project wide font, and candy burst effect when a pinata breaks
 
-- "Thaleah" font by [Rick Hoppmann / Tiny Worlds](https://tinyworlds.itch.io/free-pixel-font-thaleah),
-  [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+## Self-Evaluation
+I completed all 3 user stories, so I believe this increment earns an A.
 
-- Food, potion, and coin icons from [Foods, Potions & Coins](https://janbarboza.itch.io/foods-potions-and-coins)
-  by Jan Barboza, free for personal and commercial use, no
-  attribution required per the author's listed terms.
+- **Juice: candy burst when a piñata breaks
+- **Theme:** themed art, music, sound effects, and font. There are no
+  default fonts or placeholder art
+- **HUD:** shows how many piñatas are left
+
+## Juice
+When the player hits a pinata, a burst of candy kind of shoots out as it breaks. I added that because it makes each hit feel more rewarding, and it also goes really well with the story I created. This idea camer from the "Juice It or Lose It" video, where in the video explains that effects can make the game feel "more alive"
+
