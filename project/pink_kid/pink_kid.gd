@@ -10,6 +10,8 @@ var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 
 @onready var animated_sprite := $AnimatedSprite2D
 @onready var attack_hitbox := $AttackHitbox
+@onready var swing_sound := $SwingSound
+@onready var jump_sound := $JumpSound
 
 
 func _physics_process(delta: float) -> void:
@@ -40,6 +42,7 @@ func _physics_process(delta: float) -> void:
 
 	if not is_on_floor():
 		animation_to_play = "jump"
+		jump_sound.play()
 	elif direction != 0:
 		animation_to_play = "run"
 
@@ -48,6 +51,7 @@ func _physics_process(delta: float) -> void:
 
 func attack() -> void:
 	animated_sprite.play("hit")
+	swing_sound.play()
 	for area in attack_hitbox.get_overlapping_areas():
 		if area is Pinata:
 			pinata_hit.emit(area)

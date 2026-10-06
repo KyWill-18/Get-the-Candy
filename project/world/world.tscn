@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://c4xkb0ae83o42" path="res://world/world.gd" id="1_h5o24"]
 [ext_resource type="Texture2D" uid="uid://dx5jfe02qsxq2" path="res://world/terrain.png" id="1_tcf2h"]
 [ext_resource type="PackedScene" uid="uid://dg51uekee1hkm" path="res://pink_kid/pink_kid.tscn" id="2_4717r"]
-[ext_resource type="Texture2D" uid="uid://br4eabbhe2dyv" path="res://world/background1.png" id="2_fyhu2"]
+[ext_resource type="Texture2D" uid="uid://br4eabbhe2dyv" path="res://common/background1.png" id="2_fyhu2"]
 [ext_resource type="Texture2D" uid="uid://bwb6xpil8kguj" path="res://world/background2.png" id="3_ov2xu"]
 [ext_resource type="Texture2D" uid="uid://b6eg3kpnqlhey" path="res://world/background3.png" id="4_mad0u"]
 [ext_resource type="PackedScene" uid="uid://dicyulji1v8tr" path="res://hud/hud.tscn" id="5_fn3g3"]
@@ -332,10 +332,10 @@ texture = ExtResource("5_ocfjn")
 [node name="Pinata" parent="." unique_id=1957681435 instance=ExtResource("1_4717r")]
 position = Vector2(545, 519)
 
-[node name="Pinata2" parent="." unique_id=262973583 instance=ExtResource("1_4717r")]
+[node name="Pinata_2" parent="." unique_id=262973583 instance=ExtResource("1_4717r")]
 position = Vector2(780, 304)
 
-[node name="Pinata3" parent="." unique_id=1115389402 instance=ExtResource("1_4717r")]
+[node name="Pinata_3" parent="." unique_id=1115389402 instance=ExtResource("1_4717r")]
 position = Vector2(36, 519)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=845443898]
@@ -348,7 +348,7 @@ position = Vector2(176, 429)
 
 [node name="HUD" parent="." unique_id=537886106 instance=ExtResource("5_fn3g3")]
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=91828185]
+[node name="Gameplay_Music" type="AudioStreamPlayer2D" parent="." unique_id=91828185]
 stream = ExtResource("6_fn3g3")
 volume_db = 2.0
 autoplay = true
