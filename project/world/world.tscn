@@ -4,7 +4,11 @@
 [ext_resource type="Script" uid="uid://c4xkb0ae83o42" path="res://world/world.gd" id="1_h5o24"]
 [ext_resource type="Texture2D" uid="uid://dx5jfe02qsxq2" path="res://world/terrain.png" id="1_tcf2h"]
 [ext_resource type="PackedScene" uid="uid://dg51uekee1hkm" path="res://pink_kid/pink_kid.tscn" id="2_4717r"]
+[ext_resource type="Texture2D" uid="uid://br4eabbhe2dyv" path="res://world/background1.png" id="2_fyhu2"]
+[ext_resource type="Texture2D" uid="uid://bwb6xpil8kguj" path="res://world/background2.png" id="3_ov2xu"]
+[ext_resource type="Texture2D" uid="uid://b6eg3kpnqlhey" path="res://world/background3.png" id="4_mad0u"]
 [ext_resource type="PackedScene" uid="uid://dicyulji1v8tr" path="res://hud/hud.tscn" id="5_fn3g3"]
+[ext_resource type="Texture2D" uid="uid://ba7gmf87qetll" path="res://world/background4.png" id="5_ocfjn"]
 [ext_resource type="AudioStream" uid="uid://7s5aorbjmagg" path="res://world/gameplay_music.wav" id="6_fn3g3"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irlpa"]
@@ -304,6 +308,26 @@ sources/0 = SubResource("TileSetAtlasSource_irlpa")
 
 [node name="World" type="Node2D" unique_id=501303129]
 script = ExtResource("1_h5o24")
+
+[node name="Game_BG_1" type="Sprite2D" parent="." unique_id=1671637683]
+position = Vector2(575.5, 323)
+scale = Vector2(1.7921875, 1.6875)
+texture = ExtResource("2_fyhu2")
+
+[node name="Game_BG_2" type="Sprite2D" parent="." unique_id=1761518105]
+position = Vector2(576.00006, 341)
+scale = Vector2(1.8437501, 1.4401042)
+texture = ExtResource("3_ov2xu")
+
+[node name="Game_BG_3" type="Sprite2D" parent="." unique_id=559580538]
+position = Vector2(579.00006, 373.99997)
+scale = Vector2(1.8046876, 1.2239583)
+texture = ExtResource("4_mad0u")
+
+[node name="Game_BG_4" type="Sprite2D" parent="." unique_id=797766796]
+position = Vector2(589, 385.00003)
+scale = Vector2(2.0109375, 1.0911459)
+texture = ExtResource("5_ocfjn")
 
 [node name="Pinata" parent="." unique_id=1957681435 instance=ExtResource("1_4717r")]
 position = Vector2(545, 519)
