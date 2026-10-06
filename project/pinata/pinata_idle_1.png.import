@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://de5ji41lavfad"
-path="res://.godot/imported/ExplotePinate4.png-c29ddad303a3812b58945aebaf4dd1b4.ctex"
+uid="uid://c4ls3j58xdics"
+path="res://.godot/imported/pinata_idle_1.png-3510df1978744d3aa9465962c1c387ca.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pinata/ExplotePinate4.png"
-dest_files=["res://.godot/imported/ExplotePinate4.png-c29ddad303a3812b58945aebaf4dd1b4.ctex"]
+source_file="res://pinata/pinata_idle_1.png"
+dest_files=["res://.godot/imported/pinata_idle_1.png-3510df1978744d3aa9465962c1c387ca.ctex"]
 
 [params]
 

@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://d3v5y3sg4cae6"]
 
 [ext_resource type="Script" uid="uid://bts8va0yfei8o" path="res://pinata/pinata.gd" id="1_gew7t"]
-[ext_resource type="Texture2D" uid="uid://b1u25eyhxud65" path="res://pinata/ExplotePinate2.png" id="2_xcfta"]
-[ext_resource type="Texture2D" uid="uid://bqtloar11xrum" path="res://pinata/ExplotePinate3.png" id="3_ldgue"]
-[ext_resource type="Texture2D" uid="uid://de5ji41lavfad" path="res://pinata/ExplotePinate4.png" id="4_elwmr"]
-[ext_resource type="Texture2D" uid="uid://cykyyxanhk8w" path="res://pinata/ExplotePinate5.png" id="5_tl4tm"]
-[ext_resource type="Texture2D" uid="uid://dqrkc7ijp7yas" path="res://pinata/ExplotePinate6.png" id="6_hnnn7"]
-[ext_resource type="Texture2D" uid="uid://c4ls3j58xdics" path="res://pinata/PinataIdle1.png" id="7_4vpxd"]
-[ext_resource type="Texture2D" uid="uid://chasb7d00r1c8" path="res://pinata/PinataIdle2.png" id="8_dhqgx"]
-[ext_resource type="Texture2D" uid="uid://chmavb7825ehs" path="res://pinata/PinataIdle3.png" id="9_hdeer"]
+[ext_resource type="Texture2D" uid="uid://b1u25eyhxud65" path="res://pinata/explote_pinata_2.png" id="2_xcfta"]
+[ext_resource type="Texture2D" uid="uid://bqtloar11xrum" path="res://pinata/explote_pinata_3.png" id="3_ldgue"]
+[ext_resource type="Texture2D" uid="uid://de5ji41lavfad" path="res://pinata/explote_pinata_4.png" id="4_elwmr"]
+[ext_resource type="Texture2D" uid="uid://cykyyxanhk8w" path="res://pinata/explote_pinata_5.png" id="5_tl4tm"]
+[ext_resource type="Texture2D" uid="uid://dqrkc7ijp7yas" path="res://pinata/explote_pinata_6.png" id="6_hnnn7"]
+[ext_resource type="Texture2D" uid="uid://c4ls3j58xdics" path="res://pinata/pinata_idle_1.png" id="7_4vpxd"]
+[ext_resource type="Texture2D" uid="uid://chasb7d00r1c8" path="res://pinata/pinata_idle_2.png" id="8_dhqgx"]
+[ext_resource type="Texture2D" uid="uid://chmavb7825ehs" path="res://pinata/pinata_idle_3.png" id="9_hdeer"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_awtvj"]
 animations = [{

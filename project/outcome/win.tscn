@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bpw5kdbnd4c7v"]
 
 [ext_resource type="Script" uid="uid://f3i3n6ye5qp8" path="res://outcome/win.gd" id="1_eg5rp"]
-[ext_resource type="FontFile" uid="uid://mjvl0kulyj0x" path="res://common/ThaleahFat.ttf" id="2_2hibl"]
+[ext_resource type="FontFile" uid="uid://mjvl0kulyj0x" path="res://common/thaleah_fat.ttf" id="2_2hibl"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2gk58"]
 font = ExtResource("2_2hibl")

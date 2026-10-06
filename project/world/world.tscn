@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d3v5y3sg4cae6" path="res://pinata/pinata.tscn" id="1_4717r"]
 [ext_resource type="Script" uid="uid://c4xkb0ae83o42" path="res://world/world.gd" id="1_h5o24"]
-[ext_resource type="Texture2D" uid="uid://dx5jfe02qsxq2" path="res://world/Terrain (16x16).png" id="1_tcf2h"]
+[ext_resource type="Texture2D" uid="uid://dx5jfe02qsxq2" path="res://world/terrain.png" id="1_tcf2h"]
 [ext_resource type="PackedScene" uid="uid://dg51uekee1hkm" path="res://pink_kid/pink_kid.tscn" id="2_4717r"]
 [ext_resource type="PackedScene" uid="uid://dicyulji1v8tr" path="res://hud/hud.tscn" id="5_fn3g3"]
 

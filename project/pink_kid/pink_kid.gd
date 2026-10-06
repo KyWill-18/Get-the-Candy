@@ -11,6 +11,7 @@ var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 @onready var animated_sprite := $AnimatedSprite2D
 @onready var attack_hitbox := $AttackHitbox
 
+
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y += gravity * delta
@@ -18,7 +19,7 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	var direction := Input.get_axis("move_left","move_right")
+	var direction := Input.get_axis("move_left", "move_right")
 
 	if direction:
 		velocity.x = direction * WALK_SPEED

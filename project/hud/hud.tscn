@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dicyulji1v8tr"]
 
 [ext_resource type="Script" uid="uid://2iajb4kdq353" path="res://hud/hud.gd" id="1_6ca3a"]
-[ext_resource type="FontFile" uid="uid://mjvl0kulyj0x" path="res://common/ThaleahFat.ttf" id="2_2gk58"]
+[ext_resource type="FontFile" uid="uid://mjvl0kulyj0x" path="res://common/thaleah_fat.ttf" id="2_2gk58"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_2gk58"]
 font = ExtResource("2_2gk58")

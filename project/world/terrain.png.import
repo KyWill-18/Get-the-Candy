@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnvmrh6go6l28"
-path="res://.godot/imported/Hit (32x32).png-d21e4e632c7afb0a7b98e55c3dbb3133.ctex"
+uid="uid://dx5jfe02qsxq2"
+path="res://.godot/imported/terrain.png-a02dd903a923d9d60161530f7b50379f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pink_kid/Hit (32x32).png"
-dest_files=["res://.godot/imported/Hit (32x32).png-d21e4e632c7afb0a7b98e55c3dbb3133.ctex"]
+source_file="res://world/terrain.png"
+dest_files=["res://.godot/imported/terrain.png-a02dd903a923d9d60161530f7b50379f.ctex"]
 
 [params]
 

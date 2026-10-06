@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://dg51uekee1hkm"]
 
 [ext_resource type="Script" uid="uid://bs1sjgvb1lwhn" path="res://pink_kid/pink_kid.gd" id="1_k84i8"]
-[ext_resource type="Texture2D" uid="uid://cnvmrh6go6l28" path="res://pink_kid/Hit (32x32).png" id="2_fwdex"]
-[ext_resource type="Texture2D" uid="uid://6gdkpdjlxccp" path="res://pink_kid/Idle (32x32).png" id="3_60ncy"]
-[ext_resource type="Texture2D" uid="uid://dgo0ykvgnaqcs" path="res://pink_kid/Jump (32x32).png" id="4_pmum0"]
-[ext_resource type="Texture2D" uid="uid://cm6pje3g5ye6t" path="res://pink_kid/Run (32x32).png" id="5_8enws"]
+[ext_resource type="Texture2D" uid="uid://cnvmrh6go6l28" path="res://pink_kid/hit.png" id="2_fwdex"]
+[ext_resource type="Texture2D" uid="uid://6gdkpdjlxccp" path="res://pink_kid/idle.png" id="3_60ncy"]
+[ext_resource type="Texture2D" uid="uid://dgo0ykvgnaqcs" path="res://pink_kid/jump.png" id="4_pmum0"]
+[ext_resource type="Texture2D" uid="uid://cm6pje3g5ye6t" path="res://pink_kid/run.png" id="5_8enws"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fvc00"]
 atlas = ExtResource("2_fwdex")

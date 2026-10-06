@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx5jfe02qsxq2"
-path="res://.godot/imported/Terrain (16x16).png-350356dbe8cd269d39275bb36de5dda8.ctex"
+uid="uid://chmavb7825ehs"
+path="res://.godot/imported/pinata_idle_3.png-a7869004018bd5c6712bcfd90df08476.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://world/Terrain (16x16).png"
-dest_files=["res://.godot/imported/Terrain (16x16).png-350356dbe8cd269d39275bb36de5dda8.ctex"]
+source_file="res://pinata/pinata_idle_3.png"
+dest_files=["res://.godot/imported/pinata_idle_3.png-a7869004018bd5c6712bcfd90df08476.ctex"]
 
 [params]
 
