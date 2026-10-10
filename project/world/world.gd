@@ -2,7 +2,6 @@ extends Node2D
 
 var _pinatas_remaining: int
 
-@onready var pink_kid: PinkKid = $"Pink Kid"
 @onready var _hud: Control = $HUD
 
 
@@ -14,11 +13,6 @@ func _ready() -> void:
 		pinata.destroyed.connect(_on_pinata_destroyed)
 
 	_hud.update_pinatas_remaining(_pinatas_remaining)
-	pink_kid.pinata_hit.connect(_on_pink_kid_pinata_hit)
-
-
-func _on_pink_kid_pinata_hit(pinata: Pinata) -> void:
-	pinata.get_hit()
 
 
 func _on_pinata_destroyed() -> void:

@@ -266,11 +266,12 @@ autoplay = "idle"
 position = Vector2(0, 4)
 shape = SubResource("CapsuleShape2D_awtvj")
 
-[node name="AttackHitbox" type="Area2D" parent="." unique_id=260301986]
+[node name="AttackHitbox" type="Area2D" parent="." unique_id=260301986 groups=["attacks"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackHitbox" unique_id=814151337]
 position = Vector2(12.333332, 2.3333385)
 shape = SubResource("RectangleShape2D_awtvj")
+disabled = true
 
 [node name="SwingSound" type="AudioStreamPlayer2D" parent="." unique_id=2726175]
 stream = ExtResource("6_fwdex")

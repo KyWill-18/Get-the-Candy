@@ -3,24 +3,29 @@ extends Area2D
 
 signal destroyed
 
-@onready var animated_sprite := $AnimatedSprite2D
-@onready var collision_shape := $CollisionShape2D
-@onready var cpu_particles := $CPUParticles2D
-@onready var pinata_thud := $PinataThud
+@onready var _animated_sprite := $AnimatedSprite2D
+@onready var _collision_shape := $CollisionShape2D
+@onready var _cpu_particles := $CPUParticles2D
+@onready var _pinata_thud := $PinataThud
 
-var is_destroyed := false
+var _is_destroyed := false
 
 
-func get_hit() -> void:
-	if is_destroyed:
+func _ready() -> void:
+	area_entered.connect(_on_area_entered)
+
+
+func _on_area_entered(area: Area2D) -> void:
+	if _is_destroyed or not area.is_in_group("attacks"):
 		return
-	is_destroyed = true
-	destroyed.emit()
-	animated_sprite.play("destroy")
-	collision_shape.set_deferred("disabled", true)
-	pinata_thud.play()
-	cpu_particles.emitting = true
 
-	await animated_sprite.animation_finished
+	_is_destroyed = true
+	destroyed.emit()
+	_animated_sprite.play("destroy")
+	_collision_shape.set_deferred("disabled", true)
+	_pinata_thud.play()
+	_cpu_particles.emitting = true
+
+	await _animated_sprite.animation_finished
 
 	queue_free()

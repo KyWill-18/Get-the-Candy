@@ -1,42 +1,41 @@
 class_name PinkKid
 extends CharacterBody2D
 
-signal pinata_hit(pinata: Pinata)
+const _WALK_SPEED = 300.0
+const _JUMP_VELOCITY = -400.0
 
-const WALK_SPEED = 300.0
-const JUMP_VELOCITY = -400.0
+var _gravity: float = ProjectSettings.get("physics/2d/default_gravity")
 
-var gravity: float = ProjectSettings.get("physics/2d/default_gravity")
-
-@onready var animated_sprite := $AnimatedSprite2D
-@onready var attack_hitbox := $AttackHitbox
-@onready var swing_sound := $SwingSound
-@onready var jump_sound := $JumpSound
+@onready var _animated_sprite := $AnimatedSprite2D
+@onready var _attack_hitbox := $AttackHitbox
+@onready var _attack_shape := $AttackHitbox/CollisionShape2D
+@onready var _swing_sound := $SwingSound
+@onready var _jump_sound := $JumpSound
 
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
-		velocity.y += gravity * delta
+		velocity.y += _gravity * delta
 
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY
-		jump_sound.play()
+		velocity.y = _JUMP_VELOCITY
+		_jump_sound.play()
 
 	var direction := Input.get_axis("move_left", "move_right")
 
 	if direction:
-		velocity.x = direction * WALK_SPEED
-		animated_sprite.flip_h = (direction < 0)
-		attack_hitbox.scale.x = signf(direction)
+		velocity.x = direction * _WALK_SPEED
+		_animated_sprite.flip_h = (direction < 0)
+		_attack_hitbox.scale.x = signf(direction)
 	else:
-		velocity.x = move_toward(velocity.x, 0, WALK_SPEED)
+		velocity.x = move_toward(velocity.x, 0, _WALK_SPEED)
 
 	if Input.is_action_just_pressed("attack"):
-		attack()
+		_attack()
 
 	move_and_slide()
 
-	if animated_sprite.animation == "hit" and animated_sprite.is_playing():
+	if _animated_sprite.animation == "hit" and _animated_sprite.is_playing():
 		return
 
 	var animation_to_play := "idle"
@@ -46,12 +45,14 @@ func _physics_process(delta: float) -> void:
 	elif direction != 0:
 		animation_to_play = "run"
 
-	animated_sprite.play(animation_to_play)
+	_animated_sprite.play(animation_to_play)
 
 
-func attack() -> void:
-	animated_sprite.play("hit")
-	swing_sound.play()
-	for area in attack_hitbox.get_overlapping_areas():
-		if area is Pinata:
-			pinata_hit.emit(area)
+func _attack() -> void:
+	_attack_shape.set_deferred("disabled", false)
+	_animated_sprite.play("hit")
+	_swing_sound.play()
+
+	await _animated_sprite.animation_finished
+
+	_attack_shape.set_deferred("disabled", true)
