@@ -27,8 +27,7 @@ A kid with a stick whose birthday party was ruined by an evil piñata who stole 
 - Player character and tileset from [Pixel Adventure 1](https://pixelfrog-assets.itch.io/pixel-adventure-1)
   by Pixel Frog, [CC0 1.0 Universal](http://creativecommons.org/publicdomain/zero/1.0/).
 
-- "Thaleah" font by [Rick Hoppmann / Tiny Worlds](https://tinyworlds.itch.io/free-pixel-font-thaleah),
-  [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+* "Thaleah" font by Rick Hoppmann (Tiny Worlds), https://tinyworlds.itch.io/free-pixel-font-thaleah, licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). The font is unmodified apart from renaming the file to thaleah_fat.ttf.
 
 - Food, potion, and coin icons from [Foods, Potions & Coins](https://janbarboza.itch.io/foods-potions-and-coins)
   by Jan Barboza, free for personal and commercial use, no
