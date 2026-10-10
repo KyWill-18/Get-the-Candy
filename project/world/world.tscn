@@ -344,7 +344,8 @@ tile_map_data = PackedByteArray("AAAAABcAAAAGAAAAAAAAABgAAAAGAAEAAAAAABkAAAAGAAI
 tile_set = SubResource("TileSet_awtvj")
 
 [node name="Pink Kid" parent="." unique_id=1726459749 instance=ExtResource("2_4717r")]
-position = Vector2(176, 429)
+position = Vector2(175, 432)
+scale = Vector2(3, 3)
 
 [node name="HUD" parent="." unique_id=537886106 instance=ExtResource("5_fn3g3")]
 

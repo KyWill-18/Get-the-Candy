@@ -255,8 +255,6 @@ height = 24.0
 size = Vector2(27.16667, 15.333328)
 
 [node name="Pink Kid" type="CharacterBody2D" unique_id=1726459749]
-position = Vector2(68, 515)
-scale = Vector2(3, 3)
 script = ExtResource("1_k84i8")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1669005003]

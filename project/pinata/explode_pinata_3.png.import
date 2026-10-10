@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqtloar11xrum"
-path="res://.godot/imported/explote_pinata_3.png-9c72007fd15e13dfe02f122fd3b6f4b6.ctex"
+path="res://.godot/imported/explode_pinata_3.png-fee9524a6071dd1d3fb53ba1a2d7c8b2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://pinata/explote_pinata_3.png"
-dest_files=["res://.godot/imported/explote_pinata_3.png-9c72007fd15e13dfe02f122fd3b6f4b6.ctex"]
+source_file="res://pinata/explode_pinata_3.png"
+dest_files=["res://.godot/imported/explode_pinata_3.png-fee9524a6071dd1d3fb53ba1a2d7c8b2.ctex"]
 
 [params]
 
