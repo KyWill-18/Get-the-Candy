@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dgo0ykvgnaqcs" path="res://pink_kid/jump.png" id="4_pmum0"]
 [ext_resource type="Texture2D" uid="uid://cm6pje3g5ye6t" path="res://pink_kid/run.png" id="5_8enws"]
 [ext_resource type="AudioStream" uid="uid://cjbr86ewbgwor" path="res://pink_kid/swing.wav" id="6_fwdex"]
-[ext_resource type="AudioStream" uid="uid://csfm6n8n5k7w6" path="res://pink_kid/jump.wav" id="7_60ncy"]
+[ext_resource type="AudioStream" uid="uid://bir6y5m3noitt" path="res://pink_kid/jump.wav" id="7_60ncy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fvc00"]
 atlas = ExtResource("2_fwdex")

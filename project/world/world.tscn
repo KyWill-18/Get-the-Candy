@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://b6eg3kpnqlhey" path="res://world/background3.png" id="4_mad0u"]
 [ext_resource type="PackedScene" uid="uid://dicyulji1v8tr" path="res://hud/hud.tscn" id="5_fn3g3"]
 [ext_resource type="Texture2D" uid="uid://ba7gmf87qetll" path="res://world/background4.png" id="5_ocfjn"]
-[ext_resource type="AudioStream" uid="uid://7s5aorbjmagg" path="res://world/gameplay_music.wav" id="6_fn3g3"]
+[ext_resource type="AudioStream" uid="uid://jmyfurrjg7nm" path="res://world/gameplay_music.ogg" id="10_fyhu2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irlpa"]
 texture = ExtResource("1_tcf2h")
@@ -349,6 +349,6 @@ position = Vector2(176, 429)
 [node name="HUD" parent="." unique_id=537886106 instance=ExtResource("5_fn3g3")]
 
 [node name="Gameplay_Music" type="AudioStreamPlayer2D" parent="." unique_id=91828185]
-stream = ExtResource("6_fn3g3")
+stream = ExtResource("10_fyhu2")
 volume_db = 2.0
 autoplay = true

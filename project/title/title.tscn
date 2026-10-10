@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dspraknbeghop" path="res://title/title_background.png" id="1_crako"]
 [ext_resource type="Script" uid="uid://cnplidgcfuod8" path="res://title/title.gd" id="1_nx56k"]
 [ext_resource type="FontFile" uid="uid://mjvl0kulyj0x" path="res://common/thaleah_fat.ttf" id="2_nx56k"]
-[ext_resource type="AudioStream" uid="uid://q5iv1t63oj1h" path="res://title/title_music.wav" id="4_6s8lb"]
+[ext_resource type="AudioStream" uid="uid://cd3b0odwvde2d" path="res://title/title_music.ogg" id="4_6s8lb"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_awtvj"]
 line_spacing = -30.0
@@ -65,7 +65,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_crako")
 theme_override_styles/focus = SubResource("StyleBoxFlat_crako")
 text = "Press Start!"
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=645563750]
+[node name="TitleMusic" type="AudioStreamPlayer2D" parent="." unique_id=645563750]
 stream = ExtResource("4_6s8lb")
 volume_db = 3.0
 autoplay = true
