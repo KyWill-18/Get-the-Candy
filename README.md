@@ -1,7 +1,7 @@
 # Get the Candy!
 A game by Kyla Williams
 
-A kid with a stick whose birthday party was ruined by an evil pinata who stole all his candy. Now he has to explore a 2D world, attacking every evil pinata in sight to make candy fall out of them and collect all his birthday candy back.
+A kid with a stick whose birthday party was ruined by an evil piñata who stole all his candy. Now he has to explore a 2D world, attacking every evil piñata in sight to make candy fall out of them and collect all his birthday candy back.
 
 ### Controls
 - A/D or Left/Right Arrow: Move
@@ -14,10 +14,10 @@ A kid with a stick whose birthday party was ruined by an evil pinata who stole a
 
 
 ## Increment 2: Juice and Polish
-- Title screen with a Start button
+- Title screen with a Press Start button
 - Title and gameplay music, plus sound effects for jumping, swinging, and hitting piñatas, and a win jingle
 - Candy burst effect when a piñata breaks
-- Themed background and project wide Thaleah font
+- Themed background and project-wide Thaleah font
 
 ### Third-Party Assets
 
