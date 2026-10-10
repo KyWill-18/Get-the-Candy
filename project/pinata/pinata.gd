@@ -36,6 +36,7 @@ func _on_area_entered(area: Area2D) -> void:
 
 	queue_free()
 
+
 func _on_frame_changed() -> void:
 	if _animated_sprite.animation == "destroy" and _animated_sprite.frame == _BURST_FRAME:
 		_cpu_particles.emitting = true
