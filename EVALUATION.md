@@ -1,6 +1,6 @@
 # Evaluation 2, Increment 1: 2D Platforming Basics
 
-For this project, I created a 2D platformer where the player controls the pink character and hits piñatas to win the game
+For this project, I created a 2D platformer where the player controls the pink character and hits piñatas to win the game.
 
 ## Self-Evaluation
 - Move left and right through a 2D platformer world
